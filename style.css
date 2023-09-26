@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background: #365c5a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 450px;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255);
+    border-radius: 6px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+.date-input {
+    width: 100%; /* Hacemos que el campo de fecha ocupe el 100% del ancho del contenedor */
+    padding: 10px; /* Añadimos relleno para aumentar el tamaño del cuadro de entrada */
+    font-size: 1.2rem; /* Tamaño de fuente más grande */
+}
+
+.container * {
+    border: none;
+    outline: none;
+}
+
+.input-wrapper {
+    margin-bottom: 20px;
+    display: grid;
+    gap: 10px;
+}
+
+input[type="date"] {
+    background-color: #f4f4f4;
+}
+
+input:focus,
+button:focus,
+input[type="date"]:focus {
+    border-color: #55d0f0;
+}
+
+button {
+    color: #fff;
+    background-color: #14141c;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    padding: 10px 20px; /* Añadimos relleno al botón para que sea más grande y atractivo */
+    border: none;
+    border-radius: 6px; /* Agregamos bordes redondeados */
+    font-size: 1.2em; /* Tamaño de fuente más grande */
+}
+
+button:hover {
+    background-color: #1a1a28;
+}
+
+.output-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.output-wrapper div {
+    flex-basis: calc(50% - 20px);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px 0.3;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+}
+
+span {
+    display: block;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #141414;
+    margin-bottom: 5px;
+}
+
+p {
+    font-size: 0.87em;
+    color: #707070;
+    font-weight: 400;
+}
+.creator-name {
+    position: absolute;
+    bottom: 10px; /* Ajusta la posición vertical según tu preferencia */
+    left: 10px; /* Ajusta la posición horizontal según tu preferencia */
+    font-size: 0.8em; /* Tamaño de fuente más pequeño para que parezca una marca de agua */
+    color: rgba(0, 0, 0, 0.5); /* Color de texto más claro para un efecto de marca de agua */
+}
+
+.result-box {
+    flex-basis: calc(33.33% - 20px); /* Dividimos en 3 columnas */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px 0.3;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    background-color: #eddcdc; /* Color de fondo blanco */
+}
+
+.result-box span {
+    display: block;
+    font-size: 1.2rem; /* Tamaño de fuente más grande */
+    font-weight: 500;
+    color: #141414;
+    margin-bottom: 5px;
+}
+
+.result-box p {
+    font-size: 1.5rem; /* Tamaño de fuente más grande */
+    color: #707070;
+    font-weight: 400;
+}

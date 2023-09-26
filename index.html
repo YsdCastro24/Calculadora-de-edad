@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculador de Edad</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculador de Edad</h1>
+        <form>
+            <div class="input-wrapper">
+                <label for="date-input">Fecha de Nacimiento:</label>
+                <input type="date" id="date-input" class="date-input" required>
+            </div>
+            <div>
+                <button type="button" id="calcularEdad">Calcular Edad</button>
+            </div>
+        </form>
+        <!-- ... (otros elementos HTML) -->
+        <div class="output-wrapper">
+            <div class="result-box">
+                <span>Años</span>
+                <p><span id="years">-</span></p>
+            </div>
+            <div class="result-box">
+                <span>Meses</span>
+                <p><span id="months">-</span></p>
+            </div>
+            <div class="result-box">
+                <span>Días</span>
+                <p><span id="days">-</span></p>
+            </div>
+            <div class="result-box">
+                <span>Signo Zodiacal</span>
+                <p><span id="zodiac-sign">-</span></p>
+            </div>
+            <p class="creator-name">Creado por: Andres D</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
